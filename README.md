@@ -16,8 +16,6 @@ A sleek and modern **React component library** designed to elevate your project'
 
 ## 📦 **Installation**
 
-Install the library:
-
 ```bash
 npm install vibe-library
 ```
