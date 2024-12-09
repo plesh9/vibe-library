@@ -21,12 +21,12 @@ export const Accordion: FC<Props> = ({ header, body, rootProps = {}, name, ...de
                 }}
             >
                 <summary>
-                    <span role='term' aria-details={name}>
+                    <div role='term' aria-details={name}>
                         {header}
-                    </span>
+                    </div>
                 </summary>
             </details>
-            <div className={s.accordion__content} id={name} role='definition'>
+            <div className={s.accordion__content} role='definition'>
                 <div className={s['accordion__content-body']}>{body}</div>
             </div>
         </div>
