@@ -1,2 +1,2 @@
-export { Button } from './ui/Button'
-export { lazyLoad } from './utils/lazyLoad'
+export * from './ui'
+export * from './utils'

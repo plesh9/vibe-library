@@ -1,0 +1,98 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": ["prettier"],
+    "plugins": ["@typescript-eslint", "react", "prettier", "eslint-plugin-import"],
+    "rules": {
+        "camelcase": "error",
+        "no-console": "warn",
+        "no-floating-decimal": "error",
+        "no-sequences": "error",
+        "curly": "off",
+        "no-lonely-if": "error",
+        "one-var-declaration-per-line": "error",
+        "react-hooks/rules-of-hooks": "off",
+        "@typescript-eslint/consistent-type-exports": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "func-style": "error",
+        "no-debugger": "warn",
+        "no-empty": "error",
+        "semi": ["warn", "never"],
+        "newline-before-return": "error",
+        "newline-after-var": "error",
+        "space-in-parens": "error",
+        "react/jsx-wrap-multilines": "off",
+        "react/no-unescaped-entities": 0,
+        "no-unused-vars": "off",
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": false,
+                "avoidEscape": true
+            }
+        ],
+        "array-callback-return": "off",
+        "prettier/prettier": [
+            "warn",
+            {
+                "endOfLine": "auto",
+                "printWidth": 250,
+                "trailingComma": "none",
+                "tabWidth": 4,
+                "semi": false,
+                "singleQuote": true,
+                "jsxSingleQuote": true,
+                "arrowParens": "always",
+                "bracketSameLine": false
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+                "pathGroups": [
+                    {
+                        "pattern": "@shared/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "@entities/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "@features/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "@widgets/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "@pages/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "@app/**",
+                        "group": "internal",
+                        "position": "after"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"],
+                "newlines-between": "never",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ]
+    },
+    "parserOptions": {
+        "project": ["./tsconfig.json"]
+    },
+    "ignorePatterns": ["dist/", "node_modules/", "stylelint.config.cjs", "vite.config.ts"]
+}

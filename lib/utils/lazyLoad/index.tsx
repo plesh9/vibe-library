@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { ComponentType, ReactNode, FC } from 'react'
 import { lazy, Suspense } from 'react'
 
@@ -19,4 +18,3 @@ export const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ d
 
     return WrappedComponent
 }
-
