@@ -1,12 +1,13 @@
 import type { ComponentType, ReactNode, FC } from 'react'
 import { lazy, Suspense } from 'react'
 
-type Options = {
+interface Options {
     loading?: ReactNode
 }
 
-export const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ default: T }>, { loading = null }: Options): FC<React.ComponentProps<T>> => {
+export const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ default: T }>, options?: Options): FC<React.ComponentProps<T>> => {
     const LazyComponent = lazy(loader)
+    const { loading = null } = options || {}
 
     const WrappedComponent = (props: React.ComponentProps<T>) => (
         <Suspense fallback={loading}>

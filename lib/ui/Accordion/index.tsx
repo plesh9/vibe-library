@@ -10,7 +10,7 @@ interface Props extends BaseProps {
     rootProps?: HtmlHTMLAttributes<HTMLDivElement>
 }
 
-export const Accordion: FC<Props> = ({ header, body, rootProps = {}, name, ...detailsProps }) => {
+const Accordion: FC<Props> = ({ header, body, rootProps = {}, name, ...detailsProps }) => {
     return (
         <div {...{ ...rootProps, className: classnames(s.main, rootProps?.className) }}>
             <details
@@ -32,3 +32,5 @@ export const Accordion: FC<Props> = ({ header, body, rootProps = {}, name, ...de
         </div>
     )
 }
+
+export default Accordion

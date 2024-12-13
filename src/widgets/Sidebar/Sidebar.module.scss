@@ -1,0 +1,47 @@
+@use '/lib/const/variables' as vars;
+
+.main {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: vars.$point * 75;
+    height: 100dvh;
+}
+
+.wrapper {
+    overflow-y: auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: vars.$point * 4;
+    padding: vars.$point * 4;
+    border-right: 1px solid vars.$black5p;
+}
+
+.navigation {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: vars.$point * 1;
+}
+
+.link {
+    padding: vars.$point * 3;
+    border-radius: vars.$point * 2;
+
+    &.active {
+        background-color: vars.$blue5p;
+    }
+
+    @media (any-hover: hover) {
+        transition: vars.$transition;
+
+        &:hover:not(.active) {
+            color: vars.$gray200;
+        }
+    }
+}

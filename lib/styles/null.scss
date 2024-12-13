@@ -1,0 +1,194 @@
+/* stylelint-disable at-rule-empty-line-before */
+@use '/lib/const/variables.scss' as vars;
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    text-align: inherit;
+    overflow-wrap: anywhere;
+    vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 320px;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: vars.$white100;
+    font-family: vars.$fontFamily;
+    font-size: vars.$fontSize;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: vars.$lineHeight;
+    color: vars.$black100;
+    text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+textarea {
+    resize: none;
+    height: vars.$point * 25;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: vars.$point * 2.301 vars.$point * 3.5;
+    background-color: vars.$white100;
+    border: 1px solid vars.$black10p;
+    border-radius: vars.$point * 2;
+    outline: none;
+    box-shadow: 0 1px 2px 0 #1018280d;
+
+    &::placeholder {
+        color: vars.$black45p;
+    }
+
+    &:focus {
+        outline: vars.$point solid vars.$blue45p;
+    }
+
+    &.error_field {
+        background-color: vars.$red50;
+        border: 1px solid vars.$red500;
+        color: vars.$red500;
+
+        &::placeholder {
+            color: vars.$red500;
+        }
+    }
+}
+
+input {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        margin: 0;
+        appearance: none;
+    }
+
+    &[type='number'] {
+        appearance: textfield;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        border: 1px solid vars.$black10p !important;
+        box-shadow: 0 0 0 1000px vars.$white100 inset !important;
+        -webkit-text-fill-color: vars.$black100 !important;
+    }
+}
+
+button {
+    cursor: pointer;
+    background-color: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+g * {
+    &:focus {
+        outline: none;
+    }
+}
+
+:disabled {
+    cursor: initial;
+}

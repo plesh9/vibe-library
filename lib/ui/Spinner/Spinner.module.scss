@@ -1,0 +1,46 @@
+@use '/lib/const/variables' as vars;
+
+.main {
+    flex-shrink: 0;
+
+    &.size12 {
+        width: vars.$point * 3;
+        height: vars.$point * 3;
+    }
+
+    &.size16 {
+        width: vars.$point * 4;
+        height: vars.$point * 4;
+    }
+
+    &.size20 {
+        width: vars.$point * 5;
+        height: vars.$point * 5;
+    }
+
+    &.size24 {
+        width: vars.$point * 6;
+        height: vars.$point * 6;
+    }
+
+    &.size48 {
+        width: vars.$point * 12;
+        height: vars.$point * 12;
+    }
+
+    & > svg {
+        width: 100%;
+        height: 100%;
+        animation: rotate 1s infinite;
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

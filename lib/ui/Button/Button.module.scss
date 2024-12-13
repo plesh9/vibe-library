@@ -1,3 +1,150 @@
-.button {
-    padding: 1rem;
+@use '/lib/const/variables' as vars;
+
+.main {
+    @include vars.flexHorizontalSpace(2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-weight: 500;
+    line-height: 100%;
+    white-space: nowrap;
+    transition: all vars.$transition;
+
+    &.wide {
+        width: 100%;
+    }
+}
+
+// Sizes
+.large {
+    height: vars.$point * 11.5;
+    padding: 3 * vars.$point 5 * vars.$point;
+    border-radius: vars.$point * 2;
+
+    & > .icon {
+        flex: 0 0 vars.$point * 5;
+        width: vars.$point * 5;
+        height: vars.$point * 5;
+    }
+}
+
+.small {
+    height: vars.$point * 8;
+    padding: vars.$point * 2 vars.$point * 3;
+    border-radius: vars.$point * 2;
+
+    & > .icon {
+        flex: 0 0 vars.$point * 4;
+        width: vars.$point * 4;
+        height: vars.$point * 4;
+    }
+}
+
+// Colors
+.primary {
+    position: relative;
+    background-color: vars.$blue500;
+    color: vars.$white100;
+
+    &:active {
+        background-color: vars.$blue600;
+    }
+
+    &:focus-visible {
+        background-color: vars.$blue600;
+        outline: vars.$point solid vars.$blue600;
+    }
+
+    &:disabled {
+        cursor: default;
+        background: vars.$blue50;
+        color: vars.$gray200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            background-color: vars.$blue600;
+        }
+    }
+}
+
+.secondary {
+    background-color: vars.$blue5p;
+    color: vars.$blue500;
+
+    &:active {
+        background-color: vars.$blue10p;
+    }
+
+    &:focus-visible {
+        background-color: vars.$blue10p;
+        outline: vars.$point solid vars.$blue300;
+    }
+
+    &:disabled {
+        cursor: default;
+        background: vars.$blue50;
+        color: vars.$gray200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            background-color: vars.$blue10p;
+        }
+    }
+}
+
+.link {
+    width: fit-content;
+    height: auto;
+    padding: 0;
+    border-radius: vars.$point;
+    font-weight: 400;
+    color: vars.$blue500;
+
+    &:active {
+        color: vars.$blue600;
+    }
+
+    &:focus-visible {
+        outline: vars.$point solid vars.$blue300;
+        color: vars.$blue600;
+    }
+
+    &:disabled {
+        cursor: default;
+        color: vars.$gray200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            color: vars.$blue600;
+        }
+    }
+}
+
+.transparent {
+    background-color: transparent;
+    color: vars.$black100;
+
+    &:active {
+        color: vars.$black45p;
+    }
+
+    &:focus-visible {
+        outline: vars.$point solid vars.$blue300;
+        color: vars.$blue600;
+    }
+
+    &:disabled {
+        cursor: default;
+        color: vars.$gray200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            color: vars.$black45p;
+        }
+    }
 }

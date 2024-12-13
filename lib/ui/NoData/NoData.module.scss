@@ -1,0 +1,28 @@
+@use '/lib/const/variables' as vars;
+
+.main {
+    @include vars.flexVerticalSpace(3);
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5 * vars.$point;
+    text-align: center;
+
+    &_box {
+        img {
+            margin: 0 auto vars.$point;
+
+            @media (max-width: vars.$screen-xxl) {
+                width: vars.$point * 12;
+                height: vars.$point * 12;
+            }
+        }
+    }
+
+    &_subtitle {
+        margin-top: vars.$point;
+        color: vars.$black45p;
+    }
+}

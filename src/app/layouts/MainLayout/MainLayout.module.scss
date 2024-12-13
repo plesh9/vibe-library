@@ -1,0 +1,24 @@
+@use '/lib/const/variables' as vars;
+
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: vars.$point * 2;
+    align-items: center;
+    justify-content: center;
+    padding: vars.$point * 8;
+
+    @media (max-width: vars.$screen-xl) {
+        padding: vars.$point * 6;
+    }
+
+    @media (max-width: vars.$screen-md) {
+        padding: vars.$point * 4;
+    }
+}

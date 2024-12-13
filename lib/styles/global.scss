@@ -1,0 +1,92 @@
+/* stylelint-disable at-rule-empty-line-before */
+@use '/lib/const/variables.scss' as vars;
+@forward './root';
+@forward './null';
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+
+    &-thumb {
+        background-color: vars.$black10p;
+        border-radius: vars.$point * 3;
+    }
+
+    &-track {
+        background-color: transparent;
+    }
+}
+
+// Backgrounds
+.background_white100 {
+    background-color: vars.$white100;
+}
+
+// Black
+.background_black5p {
+    background-color: vars.$black5p;
+}
+
+.background_black10p {
+    background-color: vars.$black10p;
+}
+
+.background_black45p {
+    background-color: vars.$black45p;
+}
+
+.background_black100 {
+    background-color: vars.$black100;
+}
+
+// Blue
+.background_blue500 {
+    background-color: vars.$blue500;
+}
+
+// Green
+.background_green500 {
+    background-color: vars.$green500;
+}
+
+// Red
+.background_red500 {
+    background-color: vars.$red500;
+}
+
+// Colors
+.color_white100 {
+    color: vars.$white100;
+}
+
+// Black
+.color_black5p {
+    color: vars.$black5p;
+}
+
+.color_black10p {
+    color: vars.$black10p;
+}
+
+.color_black45p {
+    color: vars.$black45p;
+}
+
+.color_black100 {
+    color: vars.$black100;
+}
+
+// Blue
+.color_blue500 {
+    color: vars.$blue500;
+}
+
+// Green
+.color_green500 {
+    color: vars.$green500;
+}
+
+// Red
+.color_red500 {
+    color: vars.$red500;
+}

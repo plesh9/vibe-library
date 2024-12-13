@@ -1,3 +1,5 @@
+@use '/lib/const/variables' as vars;
+
 .accordion__content {
     display: grid;
     grid-template-rows: 0fr;
