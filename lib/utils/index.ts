@@ -1,2 +1,3 @@
-export { classnames } from './classnames'
-export { lazyLoad } from './lazyLoad'
+export * from './classnames'
+export * from './lazyLoad'
+export * from './getUiClasses'

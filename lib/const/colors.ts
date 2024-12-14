@@ -1,4 +1,4 @@
-export const colors = {
+const COLORS = {
     white100: 'white100',
 
     // Black
@@ -16,4 +16,7 @@ export const colors = {
     // Red
     red500: 'red500'
 } as const
-export type ColorsType = (typeof colors)[keyof typeof colors]
+
+export type ColorsType = (typeof COLORS)[keyof typeof COLORS]
+export const COLORS_VALUES = Object.values(COLORS)
+export default COLORS

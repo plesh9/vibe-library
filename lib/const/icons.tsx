@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react'
 
-export const icons = {
+const ICONS = {
     loading: (props: SVGProps<SVGSVGElement>) => (
         <svg width='16' height='16' viewBox='0 0 16 16' fill='none' {...props} xmlns='http://www.w3.org/2000/svg'>
             <path
@@ -239,4 +239,6 @@ export const icons = {
         </svg>
     )
 } as const
-export type IconsType = keyof typeof icons
+
+export type IconsType = keyof typeof ICONS
+export default ICONS

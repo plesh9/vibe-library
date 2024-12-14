@@ -2,6 +2,7 @@
 @use '/lib/const/variables.scss' as vars;
 @forward './root';
 @forward './null';
+@forward './generated-ui-classes';
 
 ::-webkit-scrollbar {
     width: 2px;

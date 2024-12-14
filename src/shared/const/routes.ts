@@ -1,6 +1,7 @@
 const ROUTES = {
     BUTTON: '/',
-    TYPOGRAPHY: '/typography'
+    TYPOGRAPHY: '/typography',
+    BOX: '/box'
 } as const
 
 export type RouteType = keyof typeof ROUTES

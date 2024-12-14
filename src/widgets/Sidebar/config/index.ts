@@ -14,6 +14,10 @@ const SIDEBAR_CONFIG: Array<SidebarConfigType> = [
     {
         title: 'Typography',
         href: ROUTES.TYPOGRAPHY
+    },
+    {
+        title: 'Box',
+        href: ROUTES.BOX
     }
 ] as const
 

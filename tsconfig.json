@@ -33,7 +33,7 @@
             "@app/*": ["src/app/*"]
         }
     },
-    "include": ["**/*.ts", "**/*.tsx"],
+    "include": ["**/*.ts", "**/*.tsx", "_scripts"],
     "exclude": ["node_nodules"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
