@@ -5,7 +5,7 @@ interface Options {
     loading?: ReactNode
 }
 
-export const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ default: T }>, options?: Options): FC<React.ComponentProps<T>> => {
+const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ default: T }>, options?: Options): FC<React.ComponentProps<T>> => {
     const LazyComponent = lazy(loader)
     const { loading = null } = options || {}
 
@@ -19,3 +19,5 @@ export const lazyLoad = <T extends ComponentType<any>>(loader: () => Promise<{ d
 
     return WrappedComponent
 }
+
+export default lazyLoad

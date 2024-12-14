@@ -1,4 +1,4 @@
-import { classnames } from '@lib/utils'
+import { classnames } from '@lib/main'
 import getUiClasses from '@lib/utils/getUiClasses'
 import type { UiClassesType } from '@lib/utils/getUiClasses/const'
 import type { FC } from 'react'
@@ -6,6 +6,7 @@ import type { FC } from 'react'
 type Props = {
     ui?: UiClassesType
 } & JSX.IntrinsicElements['div']
+export type BoxPropsType = typeof Box
 
 const Box: FC<Props> = ({ ui, className, ...rest }) => {
     const uiClasses = getUiClasses(ui)

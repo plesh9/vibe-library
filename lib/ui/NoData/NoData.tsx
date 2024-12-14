@@ -3,14 +3,14 @@ import Text from '../Typography'
 import EmptyFolder from './assets/empty-table-folder.svg'
 import s from './NoData.module.scss'
 
-export interface Props {
+export interface NoDataPropsType {
     image?: string
     title?: string
     subtitle?: string | boolean
     children?: ReactNode
 }
 
-const NoData: FC<Props> = ({ image = EmptyFolder, title = 'No results', subtitle = 'There are no data', children }) => {
+const NoData: FC<NoDataPropsType> = ({ image = EmptyFolder, title = 'No results', subtitle = 'There are no data', children }) => {
     return (
         <div className={s.main}>
             <div className={s.main_box}>

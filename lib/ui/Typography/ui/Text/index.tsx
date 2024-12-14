@@ -1,6 +1,6 @@
 'use client'
 import type { ColorsType } from '@lib/const/colors'
-import { classnames } from '@lib/utils'
+import { classnames } from '@lib/main'
 import type { ComponentPropsWithoutRef, ComponentType, ReactNode } from 'react'
 import s from './Text.module.scss'
 

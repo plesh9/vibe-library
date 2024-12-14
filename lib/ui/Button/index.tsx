@@ -1,5 +1,4 @@
-import type { IconsType } from '@lib/const'
-import { classnames } from '@lib/utils'
+import { classnames, type IconsType } from '@lib/main'
 import type { ComponentPropsWithoutRef, ComponentType, MouseEventHandler, ReactNode } from 'react'
 import Icon from '../Icon'
 import Spinner from '../Spinner'
@@ -22,6 +21,8 @@ type Props<T extends ButtonElementType | ComponentType<any>> = {
     reverse?: boolean
     type?: 'button' | 'submit' | 'reset'
 } & AdditionalButtonPropsType<T>
+
+export type ButtonPropsType = typeof Button
 
 export const buttonSizes: Record<ButtonSizesType, string> = {
     large: s.large,

@@ -3,9 +3,9 @@ import type { SpinnerPropsType } from '../Spinner'
 import Spinner from '../Spinner'
 import s from './Loader.module.scss'
 
-interface Props extends SpinnerPropsType {}
+export interface LoaderPropsType extends SpinnerPropsType {}
 
-const Loader: FC<Props> = ({ size = '24', color = 'blue500', ...rest }) => {
+const Loader: FC<LoaderPropsType> = ({ size = '24', color = 'blue500', ...rest }) => {
     return (
         <div className={s.main}>
             <Spinner size={size} color={color} {...rest} />

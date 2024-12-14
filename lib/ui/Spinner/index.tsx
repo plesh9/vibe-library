@@ -1,5 +1,4 @@
-import type { ColorsType, IconsType } from '@lib/const'
-import { classnames } from '@lib/utils'
+import { classnames, type ColorsType, type IconsType } from '@lib/main'
 import type { FC } from 'react'
 import Icon from '../Icon'
 import s from './Spinner.module.scss'
