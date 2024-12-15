@@ -1,6 +1,7 @@
-import type { ColorsType, IconsType } from '@lib/main'
-import { classnames, ICONS } from '@lib/main'
 import type { FC, SVGProps } from 'react'
+import { type ColorsType } from '../../const/colors'
+import ICONS, { type IconsType } from '../../const/icons'
+import classnames from '../../utils/classnames'
 
 export interface IconPropsType extends SVGProps<SVGSVGElement> {
     name: IconsType

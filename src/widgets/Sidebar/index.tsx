@@ -1,4 +1,4 @@
-import { classnames } from '@lib/utils'
+import { classnames } from '@lib/main'
 import type { FC } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import SIDEBAR_CONFIG from './config'

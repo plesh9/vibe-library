@@ -1,4 +1,4 @@
-import Text, { Accent, Label, Title } from '@lib/ui/Typography'
+import { Accent, Label, Text, Title } from '@lib/main'
 import type { FC } from 'react'
 
 const page: FC = () => {

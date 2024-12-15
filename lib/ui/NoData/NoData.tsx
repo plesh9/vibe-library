@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react'
-import Text from '../Typography'
+import Text from '../Typography/ui/Text'
 import EmptyFolder from './assets/empty-table-folder.svg'
 import s from './NoData.module.scss'
 

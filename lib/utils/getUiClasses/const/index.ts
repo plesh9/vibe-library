@@ -1,7 +1,7 @@
-import type { BreakpointType } from '@lib/const/breikpoints'
-import type { ColorsType } from '@lib/const/colors'
-import { COLORS_VALUES } from '@lib/const/colors'
-import type { BuildRange, ExtractValues } from '@lib/types'
+import type { BreakpointType } from '../../../const/breikpoints'
+import type { ColorsType } from '../../../const/colors'
+import { COLORS_VALUES } from '../../../const/colors'
+import type { BuildRange, ExtractValues } from '../../../types'
 
 export const POINT = 4
 export const MAX_UI_SIZE = 201
@@ -19,7 +19,7 @@ export const BASE_UI_CLASSES = {
     flexDirection: ['row', 'row-reverse', 'column', 'column-reverse'] as const,
     grow: [true, false] as const,
     gap: SIZES as unknown as SizeType[],
-    cols: SIZES as unknown as SizeType[],
+    cols: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as unknown as BuildRange<11>,
     color: COLORS_VALUES as unknown as ColorsType,
     backgroundColor: COLORS_VALUES as unknown as ColorsType,
     radius: [...SIZES, '50%', 1000] as unknown as [SizeType, '50%', 1000],

@@ -1,6 +1,7 @@
-import BREAKPOINTS from '@lib/const/breikpoints'
+import BREAKPOINTS from '../../const/breikpoints'
 import type { UiClassesType } from './const'
 import { BASE_UI_CLASSES, type BaseUiClassesType } from './const'
+import { POINT } from './const/index'
 import sanitizeClassName from './lib/sanitalizeClassName'
 
 const INITIAL_UI_CLASSES: Partial<UiClassesType> = {
@@ -36,4 +37,5 @@ const getUiClasses = (initialProps: Record<string, any> = {}): string => {
     return classes.join(' ')
 }
 
-export default getUiClasses
+export type { UiClassesType }
+export { getUiClasses as default, POINT }

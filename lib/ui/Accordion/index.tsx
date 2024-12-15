@@ -1,5 +1,5 @@
-import { classnames } from '@lib/main'
 import type { DetailsHTMLAttributes, FC, HtmlHTMLAttributes, ReactNode } from 'react'
+import classnames from '../../utils/classnames'
 import s from './Accordion.module.scss'
 
 type BaseProps = Omit<DetailsHTMLAttributes<HTMLDetailsElement>, 'children' | 'ref'>
