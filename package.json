@@ -21,7 +21,7 @@
         "build": "tsc --p ./tsconfig-build.json && vite build",
         "generate:scss": "pnpm build && node ./_scripts/generate-ui-classes.cjs",
         "npm:publish": "pnpm build && npm version patch && npm publish --access public && git push --follow-tags",
-        "release": "pnpm npm:publish && VERSION=$(node -p 'require(\"./package.json\").version') && gh release create \\\"v$VERSION\\\" --title \\\"v$VERSION\\\"",
+        "release": "pnpm npm:publish && VERSION=$(node -p 'require(\"./package.json\").version') && gh release create \"v$VERSION\" --title \"v$VERSION\" --notes \"\"",
         "lint": "pnpm format && pnpm stylelint && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "lint:fix": "pnpm format:fix && pnpm stylelint:fix && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
         "format": "prettier --check --ignore-path .gitignore .",
