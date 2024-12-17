@@ -28,7 +28,6 @@ module.exports = {
         'no-descending-specificity': null,
         'media-feature-range-notation': null,
         'number-max-precision': null,
-        'rule-empty-line-before': 'warn',
         'order/properties-order': [
             propertiesOrder,
             {

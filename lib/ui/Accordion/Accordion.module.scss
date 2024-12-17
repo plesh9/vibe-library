@@ -1,17 +1,82 @@
 @use '/lib/const/variables' as vars;
 
-.accordion__content {
+.main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: vars.$black5p;
+    border: 1px solid vars.$black5p;
+    border-radius: vars.$point * 2;
+}
+
+.details[open] {
+    .arrow {
+        transform: rotate(180deg);
+    }
+}
+
+.details[open] + {
+    .body {
+        grid-template-rows: 1fr;
+        padding: vars.$point * 3 vars.$point * 5;
+
+        &::before {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.header {
+    cursor: pointer;
+    user-select: none;
+    padding: vars.$point * 3 vars.$point * 5;
+    font-size: 16px;
+    line-height: 140%;
+
+    &::marker {
+        content: none;
+    }
+
+    &_wrapper {
+        display: flex;
+        gap: vars.$point * 2;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        flex-shrink: 0;
+        width: vars.$point * 4;
+        height: vars.$point * 4;
+        transition-duration: 0.3s;
+    }
+}
+
+.body {
+    position: relative;
+    overflow: hidden;
     display: grid;
     grid-template-rows: 0fr;
+    padding: 0 vars.$point * 5;
     transition-duration: 0.3s;
-}
 
-.accordion__content-body {
-    overflow: hidden;
-}
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - vars.$point * 10);
+        height: 1px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: vars.$black5p;
+        transition: inherit;
+    }
 
-.accordion__details[open] + {
-    .accordion__content {
-        grid-template-rows: 1fr;
+    &_wrapper {
+        overflow: hidden;
     }
 }

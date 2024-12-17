@@ -1,0 +1,26 @@
+import { Accordion, Box } from '@lib/main'
+import { type FC } from 'react'
+
+const page: FC = () => {
+    return (
+        <Box ui={{ grow: true, gap: 2 }}>
+            <Accordion
+                name='accordion1'
+                header='Accordion Header'
+                body='Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body'
+            />
+            <Accordion
+                name='accordion1'
+                header='Accordion Header'
+                body='Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body'
+            />
+            <Accordion
+                name='accordion1'
+                header='Accordion Header'
+                body='Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body Accordion Body'
+            />
+        </Box>
+    )
+}
+
+export default page

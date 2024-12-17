@@ -4,34 +4,26 @@ import { type FC } from 'react'
 const page: FC = () => {
     return (
         <Box
-            as='div'
-            className='HELLO'
-            aria-atomic='true'
             ui={{
                 align: 'center',
                 justify: 'center',
-                flexDirection: 'row',
-                gap: 7,
-                px: 10,
+                backgroundColor: 'blue500',
+                color: 'white100',
+                radius: 10,
+                p: 20,
                 lg: {
-                    px: 0,
-                    py: 20,
-                    pt: 30,
-                    align: 'end',
-                    justify: 'start',
-                    flexDirection: 'row-reverse',
-                    gap: 20,
-                    radius: '50%',
-                    width: '100%'
+                    p: 15,
+                    radius: 6,
+                    backgroundColor: 'red500'
                 },
                 md: {
-                    p: 0,
-                    flexDirection: 'column',
-                    gap: 3
+                    p: 10,
+                    radius: 4,
+                    backgroundColor: 'green500'
                 }
             }}
         >
-            BOX
+            Box
         </Box>
     )
 }

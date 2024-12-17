@@ -167,6 +167,14 @@ const ICONS = {
             <path d='M11 6L5 12M5 12L11 18M5 12H19' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
         </svg>
     ),
+    'arrow-down': (props: SVGProps<SVGSVGElement>) => (
+        <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 12 12' fill='none' {...props}>
+            <path
+                d='M6.41849 7.85488C6.34133 7.85488 6.26951 7.84257 6.20304 7.81794C6.13655 7.79331 6.07335 7.75104 6.01343 7.69113L3.13612 4.81381C3.04747 4.72517 3.00212 4.61375 3.00007 4.47955C2.99801 4.34534 3.04336 4.23187 3.13612 4.13912C3.22886 4.04637 3.34131 4 3.47345 4C3.60559 4 3.71804 4.04637 3.81078 4.13912L6.41849 6.74682L9.02619 4.13912C9.11483 4.05048 9.22625 4.00513 9.36046 4.00307C9.49465 4.00102 9.60812 4.04637 9.70086 4.13912C9.79362 4.23187 9.84 4.34432 9.84 4.47647C9.84 4.60861 9.79362 4.72106 9.70086 4.81381L6.82354 7.69113C6.76363 7.75104 6.70043 7.79331 6.63394 7.81794C6.56746 7.84257 6.49565 7.85488 6.41849 7.85488Z'
+                fill='currentColor'
+            />
+        </svg>
+    ),
     burger: (props: SVGProps<SVGSVGElement>) => (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' {...props} xmlns='http://www.w3.org/2000/svg'>
             <path d='M5 12H20' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />

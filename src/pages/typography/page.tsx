@@ -4,7 +4,7 @@ import type { FC } from 'react'
 const page: FC = () => {
     return (
         <>
-            <Title variant='h1'>Typography</Title>
+            <Title>Typography</Title>
             <Text>This is a paragraph</Text>
             <Accent>This is an accent</Accent>
             <Label>This is a label</Label>

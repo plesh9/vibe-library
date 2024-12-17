@@ -18,6 +18,18 @@ const SIDEBAR_CONFIG: Array<SidebarConfigType> = [
     {
         title: 'Box',
         href: ROUTES.BOX
+    },
+    {
+        title: 'Accordion',
+        href: ROUTES.ACCORDION
+    },
+    {
+        title: 'Loader',
+        href: ROUTES.LOADER
+    },
+    {
+        title: 'No Data',
+        href: ROUTES.NO_DATA
     }
 ] as const
 
