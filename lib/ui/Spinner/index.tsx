@@ -1,6 +1,22 @@
-import lazyLoad from '../../utils/lazyLoad'
+import type { FC } from 'react'
+import { type ColorsType } from '../../const/colors'
+import { type IconsType } from '../../const/icons'
+import classnames from '../../utils/classnames'
+import Icon from '../Icon'
+import s from './Spinner.module.scss'
 
-const Spinner = lazyLoad(() => import('./Spinner'))
+export interface SpinnerPropsType {
+    icon?: IconsType
+    size?: '12' | '16' | '20' | '24' | '48'
+    color?: ColorsType
+}
 
-export type { SpinnerPropsType } from './Spinner'
+const Spinner: FC<SpinnerPropsType> = ({ icon = 'loading', size = '16', color }) => {
+    return (
+        <div className={classnames(s.main, s[`size${size}`])}>
+            <Icon name={icon} color={color} />
+        </div>
+    )
+}
+
 export default Spinner
