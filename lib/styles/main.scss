@@ -21,7 +21,7 @@
 .hover-opacity,
 a.hover-opacity {
     @media (any-hover: hover) {
-        transition: opacity $transition;
+        transition: opacity vars.$transition;
 
         &:hover {
             opacity: 0.8;
