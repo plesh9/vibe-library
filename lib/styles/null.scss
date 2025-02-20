@@ -27,6 +27,8 @@ body {
 
 body {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     background-color: vars.$white100;
     font-family: vars.$fontFamily;
     font-size: vars.$fontSize;
