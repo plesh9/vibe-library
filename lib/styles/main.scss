@@ -22,6 +22,18 @@
     white-space: nowrap;
 }
 
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
 // Backgrounds
 .background_white100 {
     background-color: vars.$white100;
